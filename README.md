@@ -5,14 +5,14 @@ Project Overview
 In this project, a Convolutional Neural Network (CNN) is implemented to classify images of dogs and cats. The model uses a dataset containing labeled images of both dogs and cats. The goal is to train the model to recognize patterns in the images that distinguish the two animals.
 
 
-#Key Features:
+_Key Features_:
 * Image classification: Classifies images as either a dog or a cat.
 
 - Deep Learning: Utilizes a CNN architecture for image recognition.
 
 - Preprocessing: Image resizing, normalization, and augmentation techniques applied for better training.
 
-#Technologies Used:
+_Technologies Used_:
 
 - Python: Programming language used for model development.
 
