@@ -1,25 +1,40 @@
-# dog-vs-cat
-This project involves building a machine learning model to classify images of dogs and cats. The model was trained using deep learning techniques to predict whether an image contains a dog or a cat.
+# Real-Time Cat/Dog Classifier 🐱🐶
 
-Project Overview
-In this project, a Convolutional Neural Network (CNN) is implemented to classify images of dogs and cats. The model uses a dataset containing labeled images of both dogs and cats. The goal is to train the model to recognize patterns in the images that distinguish the two animals.
+A lightweight Python script that classifies cats and dogs in real-time using a fine-tuned YOLOv8 model and OpenCV.
 
+## Features
+- Real-time classification from webcam feed
+- Confidence thresholding (0.8) to filter uncertain predictions
+- Minimal dependencies (YOLOv8, OpenCV, NumPy)
+- Clean visualization with on-screen labels
 
-_Key Features_:
-* Image classification: Classifies images as either a dog or a cat.
+## Requirements
+```bash
+pip install ultralytics opencv-python numpy
+```
+## Usage
+```bash
+python run.py
+```
+## Controls:
+Press q to quit the application
 
-- Deep Learning: Utilizes a CNN architecture for image recognition.
+## How It Works:
+1- Captures frames from your default webcam (index 0)
 
-- Preprocessing: Image resizing, normalization, and augmentation techniques applied for better training.
+2- Processes each frame through your fine-tuned YOLOv11 model
 
-_Technologies Used_:
+3-Displays predictions with these rules:
 
-- Python: Programming language used for model development.
+* Shows class name if confidence > 80%
 
-- TensorFlow: Deep learning framework used to build and train the CNN.
+* Shows "none" if confidence < 80%
 
-- Keras: High-level API used for building the neural network.
+* Displays the annotated frame in real-time
 
-- OpenCV: Used for basic image processing tasks.
+## Customization:
+* To change model path: Modify best.pt path in the script
 
-- NumPy & Pandas: For data handling and manipulation.
+* To adjust confidence threshold: Change 0.8 value in the if condition
+
+* To change display text: Modify the cv.putText() parameters
