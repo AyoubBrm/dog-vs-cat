@@ -1,11 +1,11 @@
 # Real-Time Cat/Dog Classifier 🐱🐶
 
-A lightweight Python script that classifies cats and dogs in real-time using a fine-tuned YOLOv8 model and OpenCV.
+A lightweight Python script that classifies cats and dogs in real-time using a fine-tuned YOLOv11 model and OpenCV.
 
 ## Features
 - Real-time classification from webcam feed
 - Confidence thresholding (0.8) to filter uncertain predictions
-- Minimal dependencies (YOLOv8, OpenCV, NumPy)
+- Minimal dependencies (YOLOv11, OpenCV, NumPy)
 - Clean visualization with on-screen labels
 
 ## Requirements
